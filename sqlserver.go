@@ -10,8 +10,11 @@ import (
 	"github.com/zhiyunliu/glue/xdb"
 )
 
-const Proto = "sqlserver"
-const ArgumentPrefix = "p_"
+const (
+	Proto          = "sqlserver"
+	Proto2         = "mssql"
+	ArgumentPrefix = "p_"
+)
 
 type sqlserverResolver struct {
 	name string
@@ -43,8 +46,8 @@ func init() {
 	tplstmpProcessor := xdb.NewStmtDbTypeProcessor(DefaultDbTypeHandler...)
 
 	xdb.Register(&sqlserverResolver{name: Proto})
-	xdb.RegistTemplate(New(Proto, ArgumentPrefix, tplMatcher, tplstmpProcessor))
+	_ = xdb.RegistTemplate(New(Proto, ArgumentPrefix, tplMatcher, tplstmpProcessor))
 
-	xdb.Register(&sqlserverResolver{name: "mssql"})
-	xdb.RegistTemplate(New("mssql", ArgumentPrefix, tplMatcher, tplstmpProcessor))
+	xdb.Register(&sqlserverResolver{name: Proto2})
+	_ = xdb.RegistTemplate(New(Proto2, ArgumentPrefix, tplMatcher, tplstmpProcessor))
 }

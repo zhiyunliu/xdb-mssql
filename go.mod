@@ -4,8 +4,8 @@ go 1.24.1
 
 require (
 	github.com/microsoft/go-mssqldb v1.8.0
-	github.com/zhiyunliu/glue v0.7.18
-	github.com/zhiyunliu/golibs v0.3.9
+	github.com/zhiyunliu/glue v0.8.4-beta4
+	github.com/zhiyunliu/golibs v0.3.12
 	github.com/zhiyunliu/stack v1.10.1 // indirect
 	github.com/zhiyunliu/xbinding v0.1.4 // indirect
 )
@@ -32,4 +32,4 @@ require (
 	go.opentelemetry.io/otel/trace v1.35.0 // indirect
 )
 
-replace github.com/zhiyunliu/glue => ../glue
+//replace github.com/zhiyunliu/glue => ../glue
