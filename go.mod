@@ -1,6 +1,6 @@
 module github.com/zhiyunliu/xdb-mssql
 
-go 1.24.1
+go 1.23.0
 
 require (
 	github.com/microsoft/go-mssqldb v1.8.0
