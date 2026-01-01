@@ -4,8 +4,8 @@ go 1.23.0
 
 require (
 	github.com/microsoft/go-mssqldb v1.8.0
-	github.com/zhiyunliu/glue v0.8.1-beta4
-	github.com/zhiyunliu/golibs v0.3.12
+	github.com/zhiyunliu/glue v0.8.5
+	github.com/zhiyunliu/golibs v0.3.17
 	github.com/zhiyunliu/stack v1.10.1 // indirect
 	github.com/zhiyunliu/xbinding v0.1.4 // indirect
 )
